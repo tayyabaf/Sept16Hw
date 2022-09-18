@@ -6,11 +6,13 @@ package homework3;
 
 import java.util.Scanner;
 public class Animal {
+
     //properties
     private String name;
 
     //scanner thing
     Scanner input = new Scanner(System.in);
+
 
 //contructors
 
@@ -39,11 +41,8 @@ public class Animal {
 
 
     //methods
-
     public void eatLunch(){
         System.out.println(name+ " eats food");
     }
-
-
 
 }

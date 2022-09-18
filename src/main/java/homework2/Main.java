@@ -11,6 +11,7 @@ public class Main {
     //main method
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         //ask user how many pets they have. this is stored into integer numberOfPets
         System.out.println("How many pets do you have?");
         int numberOfPets = input.nextInt();
@@ -33,6 +34,9 @@ public class Main {
                 listOfPets[i] = new Pet();
             }
         }
+
+
+
         //invoke the makeNoise method on all the elements of the object array
         for (int i = 0; i < listOfPets.length; i++){
             System.out.print("Pet #" + (i+1) +": ");

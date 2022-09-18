@@ -7,6 +7,8 @@ public class Main {
     //static method
     public static void letAnimalsEat() {
         Scanner input = new Scanner(System.in);
+
+
         //ask user how many animals they want to feed. this is stored into integer numberOfAnimals
         System.out.println("How many animals would you like to feed?");
         int numberOfAnimals = input.nextInt();
@@ -29,6 +31,9 @@ public class Main {
                 listOfAnimals[i] = new Animal();
             }
         }
+
+
+
         //call the eatLunch method on all the elements of the object array
         for (int i = 0; i < listOfAnimals.length; i++){
             System.out.print("Animal #" + (i+1) +": ");

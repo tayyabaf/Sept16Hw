@@ -7,6 +7,7 @@ public class Pet{
     //properties
     private String name;
 
+
     //scanner thing
     Scanner input = new Scanner(System.in);
 
