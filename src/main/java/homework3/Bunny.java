@@ -9,7 +9,7 @@ public class Bunny extends Animal {
         super(name);
     }
 
-    public void eatLunch(){
+    public void eatFood(){
         System.out.println(getName()+ " eats carrots");
     }
 

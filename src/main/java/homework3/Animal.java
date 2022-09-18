@@ -41,7 +41,7 @@ public class Animal {
 
 
     //methods
-    public void eatLunch(){
+    public void eatFood(){
         System.out.println(name+ " eats food");
     }
 

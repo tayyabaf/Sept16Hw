@@ -37,7 +37,7 @@ public class Main {
         //call the eatLunch method on all the elements of the object array
         for (int i = 0; i < listOfAnimals.length; i++){
             System.out.print("Animal #" + (i+1) +": ");
-            listOfAnimals[i].eatLunch();
+            listOfAnimals[i].eatFood();
         }
 
 
