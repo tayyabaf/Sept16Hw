@@ -1,8 +1,12 @@
 package homework2;
-
-
-//Sources: https://www.cs.utexas.edu/~nclement/aces/javaII/10-polymorphism-arraylists.html
-// https://www.geeksforgeeks.org/constructors-in-java/?ref=lbp
+/*Sources:
+https://www.cs.utexas.edu/~nclement/aces/javaII/10-polymorphism-arraylists.html
+https://www.geeksforgeeks.org/constructors-in-java/?ref=lbp
+https://www.geeksforgeeks.org/polymorphism-in-java/?ref=gcse
+https://www.geeksforgeeks.org/inheritance-in-java/?ref=lbp
+https://www.youtube.com/watch?v=1hUUsuDfmSw&list=LL&index=1&t=253s
+https://www.youtube.com/watch?v=EbUqy6mmdI0&t=931s
+ */
 
 import java.util.Scanner;
 public class Main {
