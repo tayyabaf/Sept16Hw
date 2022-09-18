@@ -7,12 +7,12 @@ public class Main {
     //static method
     public static void letAnimalsEat() {
         Scanner input = new Scanner(System.in);
-        //ask user how many pets they have. this is stored into integer numberOfAnimals
+        //ask user how many animals they want to feed. this is stored into integer numberOfAnimals
         System.out.println("How many animals would you like to feed?");
         int numberOfAnimals = input.nextInt();
         input.skip(System.lineSeparator());
 
-        //new object array of Pet class has the length of whatever number the user said
+        //new object array of Animal class has the length of whatever number the user said
         Animal[] listOfAnimals = new Animal[numberOfAnimals];
 
         //create loop that asks for what type of pet the animal is. use if statements to check if it matches any of the child classes and make new objects from those child classes if true
