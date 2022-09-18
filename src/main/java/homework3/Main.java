@@ -7,31 +7,32 @@ public class Main {
     //static method
     public static void letAnimalsEat() {
         Scanner input = new Scanner(System.in);
-        //ask user how many pets they have. this is stored into integer numberOfPets
-        System.out.println("How many pets do you have?");
-        int numberOfPets = input.nextInt();
+        //ask user how many pets they have. this is stored into integer numberOfAnimals
+        System.out.println("How many animals would you like to feed?");
+        int numberOfAnimals = input.nextInt();
         input.skip(System.lineSeparator());
 
         //new object array of Pet class has the length of whatever number the user said
-        Pet[] listOfPets = new Pet[numberOfPets];
+        Animal[] listOfAnimals = new Animal[numberOfAnimals];
 
         //create loop that asks for what type of pet the animal is. use if statements to check if it matches any of the child classes and make new objects from those child classes if true
-        for (int i = 0; i < listOfPets.length; i++) {
-            System.out.println("What type of pet is Pet #" + (i+1) + "?");
+        for (int i = 0; i < listOfAnimals.length; i++) {
+            System.out.println("What type of animal is Animal #" + (i+1) + "?");
             String typeOfPet = input.nextLine();
             if (typeOfPet.equalsIgnoreCase("Dog")){
-                listOfPets[i] = new Dog();
+                listOfAnimals[i] = new Dog();
             }else if (typeOfPet.equalsIgnoreCase("Cat")){
-                listOfPets[i] = new Cat();
+                listOfAnimals[i] = new Cat();
             }else if (typeOfPet.equalsIgnoreCase("Bunny")) {
-                listOfPets[i] = new Bunny();
+                listOfAnimals[i] = new Bunny();
             }else {
-                listOfPets[i] = new Pet();
+                listOfAnimals[i] = new Animal();
             }
         }
         //call the eatLunch method on all the elements of the object array
-        for (int i = 0; i < listOfPets.length; i++){
-            listOfPets[i].eatLunch();
+        for (int i = 0; i < listOfAnimals.length; i++){
+            System.out.print("Animal #" + (i+1) +": ");
+            listOfAnimals[i].eatLunch();
         }
 
 
@@ -42,41 +43,5 @@ public class Main {
         //call the static method
         letAnimalsEat();
 
-//        System.out.println("How many pets do you have?");
-//        int numberOfPets = input.nextInt();
-//        input.skip(System.lineSeparator());
-//
-//        Pet[] listOfPets = new Pet[numberOfPets];
-//
-//
-//        for (int i = 0; i < listOfPets.length; i++) {
-//            System.out.println("What type of pet is Pet #" + (i+1) + "?");
-//            String typeOfPet = input.nextLine();
-//            if (typeOfPet.equalsIgnoreCase("Dog")){
-//                listOfPets[i] = new Dog();
-//            }else if (typeOfPet.equalsIgnoreCase("Cat")){
-//                listOfPets[i] = new Cat();
-//            }else if (typeOfPet.equalsIgnoreCase("Bunny")) {
-//                listOfPets[i] = new Bunny();
-//            }else {
-//                listOfPets[i] = new Pet();
-//            }
-//        }
-//
-//        for (int i = 0; i < listOfPets.length; i++){
-//                listOfPets[i].eatLunch();
-//        }
-
-
-
-//            System.out.println("Enter First Name");
-////            listOfPets[i].setName(input.next());
-//            System.out.println();
-//            System.out.println("Enter Last Name");
-//            listOfPets[i].setName(input.next());
-//            System.out.println();
-
-        //Pet myPet = new Pet();
-        //myPet.giveDescription();
     }
 }

@@ -6,7 +6,7 @@ package homework3;
 
 import java.util.Scanner;
 
-public class Pet{
+public class Animal {
     //properties
     private String name;
 
@@ -15,7 +15,7 @@ public class Pet{
 
 //contructor
 
-    public Pet() {
+    public Animal() {
         setName();
     }
 
