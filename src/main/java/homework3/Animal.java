@@ -5,7 +5,6 @@ package homework3;
 // and prints out what each animal eats!
 
 import java.util.Scanner;
-
 public class Animal {
     //properties
     private String name;
@@ -13,10 +12,13 @@ public class Animal {
     //scanner thing
     Scanner input = new Scanner(System.in);
 
-//contructor
+//contructors
 
     public Animal() {
         setName();
+    }
+    public Animal (String name){
+        this.name = name;
     }
 
 // setters & getters
@@ -28,6 +30,10 @@ public class Animal {
     public void setName() {
         System.out.println("Enter name");
         name = input.nextLine();
+        this.name = name;
+    }
+
+    public void setName(String name){
         this.name = name;
     }
 
