@@ -32,7 +32,6 @@ public class Animal {
     public void setName() {
         System.out.println("Enter name");
         name = input.nextLine();
-        this.name = name;
     }
 
     public void setName(String name){
